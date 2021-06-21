@@ -1,7 +1,7 @@
 var names = ["James", "Jack", "Flora", "Mikhil"]; //Given Array
 
 //Line by line printer function
-let print = (text) => {
+var print = (text) => {
   let node = document.createElement("P"); 
   let textnode = document.createTextNode(text); 
   node.appendChild(textnode); 
