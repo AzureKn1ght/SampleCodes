@@ -17,7 +17,7 @@ const e= 10;  //constant
 //e = a+b;
 let f = e < b;
 let g = f + 1;
-console.log(`Hello ${givenName}`);  //
+console.log(`Hello ${givenName}`);  //TEMPLATE LITERALS
 console.log("Hello " + givenName); 
 console.log(`value of a is ${a}, value of b is ${b}, value of c is ${c}, value of d is ${d}, value of e is ${e}`);
 console.log(`value of f is ${f}, value of g is ${g}`);

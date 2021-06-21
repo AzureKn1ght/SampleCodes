@@ -1,5 +1,5 @@
 var names = ['Tom','Peter','Mary'];
-var name_string = names.join(',');
+var name_string = names.join(', ');
 console.log(name_string);
 
 myArray_string = "ABS Bank, 7000.00, true, Savings Account";
@@ -18,7 +18,7 @@ console.log("push :"); names.push('James'); console.log(names);
 console.log("shift :"); names.shift(); console.log(names);
 console.log("unshift :"); names.unshift('Lim'); console.log(names);
 
-//QUEUE - Push and Shift
+//QUEUE - Push and Shift "enqueue/dequeue"
 
 //add/delete at middle
 names.splice(1, 1, ["Jin", "Jenny"]);

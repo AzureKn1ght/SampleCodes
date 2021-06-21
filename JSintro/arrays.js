@@ -1,7 +1,7 @@
 const { ENGINE_METHOD_DIGESTS } = require("constants");
 
 /* A short demo for arrays */
-var myArray = ["ABS Bank", 7000.00, true, 'Savings Account']; 
+var myArray = ["ABS Bank", 7000.00, true, 'Savings Account']; //can mix data types! 
 console.log("Your bank: " + myArray[0]);
 console.log('You have mede a transaction today: ' + myArray[2]);
 console.log('Array size:' + myArray.length);
