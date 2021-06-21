@@ -9,7 +9,7 @@ var circle = svgContainer.append("circle")
                          .attr("cy", 30)
                          .attr("r", 20);
 
-//Drwa the Rectangle
+//Draw the Rectangle
 var rectangle = svgContainer.append("rect")
                          .attr("x", 50)
                          .attr("y", 50)
