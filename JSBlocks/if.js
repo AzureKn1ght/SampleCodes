@@ -13,16 +13,12 @@ if (price === 50) {       //note the operator!
 }
 */
 
-
-
 if (price > 100) {
-    console.log ("You have 10% dicount for this item ");
+  console.log("You have 10% dicount for this item ");
 } else if (price === 100) {
-    console.log ("You have 8% discunt for this item");
- } else if (price === 50) {
-    console.log ("Purchase for 100 or more to get discount");
- } else {
-     console.log("invalid data");
- }
-
-  
+  console.log("You have 8% discunt for this item");
+} else if (price === 50) {
+  console.log("Purchase for 100 or more to get discount");
+} else {
+  console.log("invalid data");
+}

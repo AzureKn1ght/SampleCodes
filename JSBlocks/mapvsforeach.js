@@ -1,16 +1,18 @@
 //forEach is faster than map. forEach only traverses the array. 
 //map traverses the array and also creates a new array with the return values
 
+//just for looping thru
 let arr1 = [1, 2, 3, 4, 5];
 arr1.forEach((num, index) => {    //executes a provided function once for each array element.
-    return arr1[index] = num * 2;  //you need to store the results explicity
+    return arr1[index] = num * 2;  //you need to store the results explicity, does not return. 
 });
 console.log(arr1);
 
+//for looping thru and creating a new array
 let arr2 = [1, 2, 3, 4, 5];
-let doubled = arr2.map((num) => {   //creates a new array with the results of calling a provided function on every element in the calling array.
+let doubled = arr2.map((num) => {   //creates a new array with the results of calling a provided function on every element in the calling array. (index is optional here)
     return num * 2;                 //the results are automatically stored in new array
-});
+}); //MAP RETURNS A RESULT
 console.log(arr2);
 console.log(doubled);
 

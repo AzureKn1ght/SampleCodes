@@ -1,4 +1,4 @@
-//let a = 10; //defining a funtion has similar syntax
+let a = 10; //defining a funtion has similar syntax
 
 let depositIntRates = function() {
     console.log("3% for first $10000");
@@ -25,7 +25,7 @@ console.log((a/2).toFixed(2));
 let addNo = (a, b) => (a+b)*4;
 console.log(addNo(10, 20));
 
-let futureValueAF = (principle, rate, years, ci =2) => { //Arrow Function 
+let futureValueAF = (principle, rate, years, ci =2) => { //Arrow Function (replace 'function' with arrow)
     rate = rate/100;
     return (principle * (1 + rate/ci)**(ci * years));
 }
