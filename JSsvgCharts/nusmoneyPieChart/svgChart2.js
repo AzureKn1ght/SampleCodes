@@ -6,7 +6,7 @@ function myFunction() {
   radius = Math.min(width, height) / 2;
   
   //The <g> SVG element is a container used to group other SVG elements.
-  var g = svg.append("g")
+  var g = svg.append("g") //g is a general graphics element with no shape yet
         .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
 // set the color scale  
@@ -15,7 +15,7 @@ function myFunction() {
      ]);
 
   // Compute the position of each group on the pie:   
-  var pie = d3.pie().value(function(d) { 
+  var pie = d3.pie().value(function(d) { //value of pie comes from data
         return d.amt; 
      });
   //radius for the arc   
@@ -27,7 +27,7 @@ function myFunction() {
         .outerRadius(radius).innerRadius(radius - 80);
   
         
-  d3.csv("expenses.csv", function(data) {
+  d3.csv("expenses.csv", function(data) { //Read data from CSV file
     
       console.log(data);
    
@@ -37,7 +37,7 @@ function myFunction() {
       */ 
       
       // Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
-      var arc = g.selectAll(".arc")
+      var arc = g.selectAll(".arc") //now we define g shape as an arc
            .data(pie(data))
            .enter()
            .append("g")

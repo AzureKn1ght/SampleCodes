@@ -1,4 +1,5 @@
-  var svg = d3.select("svg"),
+//Auto execute code instead of onclick
+var svg = d3.select("svg"),
   width = svg.attr("width"),
   height = svg.attr("height"),
   radius = Math.min(width, height) / 2;
